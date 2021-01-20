@@ -1,0 +1,128 @@
+#header {
+    font-family: arial,sans-serif;
+    font-size: 13px;
+}
+#nav  {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 10px 10px;
+    align-items: center;
+}
+#signIn {
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    color: white;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    text-decoration: none;
+    font-size: 13px;
+    padding: 5px 12px;
+    border-radius: 2px;
+    line-height: 28px;
+
+}
+li {
+    margin: 0 10px 0 10px;
+    
+}
+#content {
+    display: flex;
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    align-items: center;
+
+    
+}
+#content > input {
+    
+    width: 500px;
+    height: 35px;
+    margin: 20px;
+    background-image: url("/images/gsearch.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: left;
+    background-position-x: 5px;
+    padding-left: 40px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+#contentbtn {
+    
+    display: flex;
+}
+#contentbtn > li {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    padding: 10px;
+border-radius: 4px;
+font-size: 14px;
+    
+
+}
+#contentbtn > li:hover {
+
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+background-image: linear-gradient(top,#f8f9fa,#f8f9fa);
+background-color: #f8f9fa;
+border: 1px solid #dadce0;
+color: #202124;
+
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 15px;
+    font-family: arial,sans-serif;
+    
+}
+#footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "india india"
+    "footerleft footerright";
+    padding-bottom: 20px;
+    padding-top: 20px;
+    row-gap: 10px;
+    color: rgba(0,0,0,.54);
+    background-color: #f2f2f2;
+}
+#india{
+    grid-area: india;
+    margin-left: 10px;
+}
+/* #foolinks {
+    grid-area: foolinks;
+    display: flex;
+    flex-direction: row;
+} */
+
+#footerleft ul{
+    grid-area: footerleft;
+    display: flex;
+    
+    justify-content: flex-start;
+    align-items: center;
+}
+#footerright ul{
+    grid-area: footerright;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    
+}
+#footer li a{
+    color: rgba(0,0,0,.54);
+}
