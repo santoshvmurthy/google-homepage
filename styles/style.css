@@ -51,6 +51,7 @@ li {
     padding-left: 40px;
     border-radius: 30px;
     font-size: 15px;
+    outline: none;
 }
 
 #contentbtn {
